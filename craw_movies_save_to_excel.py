@@ -4,11 +4,11 @@ wb = openpyxl.Workbook()
 ws = wb.active
 ws.title = '豆瓣Top250'
 
-ws['A1'] = '排名'
-ws['B1'] = '片名'
-ws['C1'] = '评分'
-ws['D1'] = '推荐语'
-ws['E1'] = '影片链接'
+ws['A1'] = 'Rank'
+ws['B1'] = 'Movie Name'
+ws['C1'] = 'Rating'
+ws['D1'] = 'Comment'
+ws['E1'] = 'Movie Link'
 
 headers={'user-agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'}
 for x in range(10):
